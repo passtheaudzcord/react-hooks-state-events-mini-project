@@ -10,10 +10,10 @@ function TaskList({ tasks, selectedCategory, onDeleteTask }) {
 
   return (
     <div className="tasks">
-      {filteredTasks.map((task, index) => (
+      {filteredTasks.map((task, id) => (
         <Task 
           task={task} 
-          key={index} 
+          key={id} 
           onDelete={() => onDeleteTask(task)} 
         />
       ))}

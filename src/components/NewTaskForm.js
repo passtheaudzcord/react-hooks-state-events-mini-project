@@ -23,8 +23,8 @@ function NewTaskForm({ categoryList, onTaskFormSubmit }) {
         Category
         <select name="category" value={category} onChange={(e) => setCategory(e.target.value)}>
           <option value="" disabled>Select category</option>
-          {categoryList.map((category, index) => (
-            <option key={index} value={category}>
+          {categoryList.map((category, id) => (
+            <option key={id} value={category}>
               {category}
             </option>
           ))}
